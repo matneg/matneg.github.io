@@ -5,18 +5,167 @@
 }
 
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
+header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+}
 
+.navigation {
+  height: 60px;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page{
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: green solid 1px;
+}
+
+.presentation {
+  width: 90%;
+  border: pink solid 1px;
+}
+
+.box-profile-image {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(white, grey);
+  width: 90%;
+}
+
+.profile-image {
+  width: 100%;
+  min-width: 200px;
+}
+
+.social-logo {
+  height: 50px;
+}
+
+.software {
+  height: 100px;
+}
+
+.bio {
+
+border: green solid 1px;
+}
+
+.skills {
+
+border: green solid 1px;
+}
+
+.cta {
+
+border: green solid 1px;
+}
+
+footer {
+  background-color: grey;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+  header {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+  }
+
+  .navigation {
+    height: 40px;
+  }
+
+  .my-logo {
+    height: 30px;
+  }
+
+.page {
+    padding-top: 10px;
 }
 
 
+  .box-profile-image {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-image {
+  width: 200px;
+}
+
+}
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+
+  header {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+  }
+
+  .navigation {
+    height: 40px;
+}
+
+.my-logo {
+  height: 30px;
+}
+
+.page {
+    padding-top: 10px;
+}
+
+  .box-profile-image {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-image {
+  width: 200px;
+}
+
+.presentation {
+  display: flex;
+}
 
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1001px) {
+
+.navigation {
+  width: 90%;
+}
+
+  .my-logo {
+    height: 50px;
+  }
+
+  .box-profile-image {
+    max-width: 600px;
+}
+
+.presentation {
+  display: flex;
+}
 
 }
