@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(Roboto-Bold-webfont.woff) format('woff');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
 
 header {
   height: 80px;
@@ -24,25 +32,37 @@ header {
   align-items: center;
 }
 
+
 .page{
   padding-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   border: green solid 1px;
 }
 
-.presentation {
+.column {
+  display: flex;
+  flex-direction: column;
   width: 90%;
+  margin: auto;
+  border: solid blue 1px;
+}
+
+.presentation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 900px;
   border: pink solid 1px;
+}
+
+.presentation > div {
+  border: red 1px solid;
+  flex-wrap: wrap;
 }
 
 .box-profile-image {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(white, grey);
-  width: 90%;
 }
 
 .profile-image {
@@ -50,8 +70,30 @@ header {
   min-width: 200px;
 }
 
+.actions {
+  border: red solid 1px;
+}
+
+.social {
+  border: blue solid 1px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.headline {
+  border: pink solid 1px;
+  margin: auto;
+  padding: 20px;
+}
+
 .social-logo {
   height: 50px;
+}
+
+.logos {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }
 
 .software {
@@ -59,18 +101,31 @@ header {
 }
 
 .bio {
-
+  max-width: 600px;
 border: green solid 1px;
 }
 
 .skills {
-
+  max-width: 600px;
 border: green solid 1px;
 }
 
 .cta {
-
+  max-width: 600px;
 border: green solid 1px;
+}
+
+.button {
+  display: block;
+  color: #FFF;
+background-color: #035158;    /* Petrolio */
+font-weight: bold;
+padding: 20px;
+text-align: center;
+border: 2px solid #5D6063;    /* Dark gray */
+border-radius: 30px;
+width: 200px;
+margin: 20px auto;
 }
 
 footer {
@@ -82,7 +137,7 @@ footer {
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
   header {
     position: fixed;
@@ -99,9 +154,8 @@ footer {
   }
 
 .page {
-    padding-top: 10px;
+    padding-top: 30px;
 }
-
 
   .box-profile-image {
     width: 100%;
@@ -112,9 +166,44 @@ footer {
   width: 200px;
 }
 
+
 }
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+
+  header {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    border: solid red 1px;
+  }
+
+  .navigation {
+    height: 40px;
+  }
+
+  .my-logo {
+    height: 30px;
+  }
+
+.page {
+    padding-top: 30px;
+}
+
+  .box-profile-image {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-image {
+  width: 200px;
+}
+
+
+}
+
 /* Tablet Styles */
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
+@media only screen and (min-width: 800px) and (max-width: 960px) {
 
   header {
     position: fixed;
@@ -131,41 +220,45 @@ footer {
 }
 
 .page {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
-  .box-profile-image {
-    width: 100%;
-    max-width: 600px;
+.box-profile-image {
+    max-width: 400px;
 }
 
 .profile-image {
-  width: 200px;
-}
-
-.presentation {
-  display: flex;
+  width: 500px;
 }
 
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 961px) {
 
 .navigation {
   width: 90%;
 }
 
-  .my-logo {
+.my-logo {
     height: 50px;
   }
 
-  .box-profile-image {
-    max-width: 600px;
+.page {
+  flex-direction: column;
+}
+
+.box-profile-image {
+    max-width: 400px;
+}
+
+.profile-image {
+  width: 500px;
 }
 
 .presentation {
   display: flex;
+  flex-wrap: wrap;
 }
 
 }
