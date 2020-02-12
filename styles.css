@@ -9,7 +9,7 @@
   src: url(Roboto-Bold-webfont.woff) format('woff');
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, li {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -36,6 +36,20 @@ nav {
   align-items: center;
 }
 
+.nav-menu {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu > li {
+  display: inline;
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+}
 
 .container{
   padding-top: 80px;
@@ -111,24 +125,25 @@ nav {
 }
 
 .software {
-  height: 100px;
+  height: 80px;
+  padding: 10px;
 }
 
 .bio {
   max-width: 800px;
-  margin-top: 50px;
+  padding-top: 80px;
 border: red solid 1px;
 }
 
 .skills {
-  max-width: 600px;
-  margin-top: 50px;
+  max-width: 800px;
+  padding-top: 80px;
 border: red solid 1px;
 }
 
 .cta {
-  max-width: 600px;
-  margin: 50px 0;
+  max-width: 800px;
+  padding: 80px 0;
 border: red solid 1px;
 }
 
@@ -173,6 +188,10 @@ footer {
     height: 40px;
   }
 
+  .nav-menu {
+    display: none;
+  }
+
   .my-logo {
     height: 30px;
   }
@@ -189,6 +208,13 @@ footer {
   width: 200px;
 }
 
+.logos {
+  flex-wrap: wrap;
+}
+
+.software {
+  height: 50px;
+}
 
 }
 
@@ -203,6 +229,10 @@ footer {
 
   nav {
     height: 40px;
+  }
+
+  .nav-menu {
+    display: none;
   }
 
   .my-logo {
@@ -228,6 +258,11 @@ footer {
   justify-content: center;
 }
 
+.logos {
+  flex-wrap: wrap;
+}
+
+
 }
 
 /* Tablet Styles */
@@ -240,6 +275,10 @@ footer {
 
   nav {
     height: 40px;
+}
+
+.nav-menu {
+  display: none;
 }
 
 .my-logo {
@@ -275,6 +314,14 @@ nav {
   width: 90%;
 }
 
+.menu-logo {
+  position: relative;
+  display: none;
+}
+
+.nav-menu {
+
+}
 
 .page {
     min-width: 800px;
