@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+p {
+  font-family: 'Fira Mono', monospace;
+}
+
 header {
   height: 80px;
   width: 100%;
@@ -23,7 +27,7 @@ header {
   background-color: white;
 }
 
-.navigation {
+nav {
   height: 60px;
   width: 80%;
   max-width: 1200px;
@@ -32,15 +36,18 @@ header {
   align-items: center;
 }
 
-
-.page{
-  padding-top: 80px;
-  border: green solid 1px;
+br {
+  height: 1000px;
 }
 
-.column {
+.container{
+  padding-top: 80px;
+}
+
+.page {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 90%;
   margin: auto;
   border: solid blue 1px;
@@ -50,19 +57,18 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  max-width: 900px;
-  border: pink solid 1px;
+  border: purple solid 1px;
 }
 
 .presentation > div {
-  border: red 1px solid;
+  border: pink 1px solid;
   flex-wrap: wrap;
 }
 
 .box-profile-image {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(white, grey);
+  background-image: linear-gradient(white, #D1D1D1);
 }
 
 .profile-image {
@@ -70,8 +76,12 @@ header {
   min-width: 200px;
 }
 
+.text-intro {
+
+}
+
 .actions {
-  border: red solid 1px;
+  border: pink solid 1px;
 }
 
 .social {
@@ -82,16 +92,16 @@ header {
 
 .headline {
   border: pink solid 1px;
-  margin: auto;
+  margin: 20px;
   padding: 20px;
 }
 
 .social-logo {
-  height: 50px;
+  height: 30px;
 }
 
 .logos {
-  border: 1px solid red;
+  border: 1px solid pink;
   display: flex;
   justify-content: space-between;
 }
@@ -102,34 +112,43 @@ header {
 
 .bio {
   max-width: 600px;
-border: green solid 1px;
+  margin-top: 50px;
+border: red solid 1px;
 }
 
 .skills {
   max-width: 600px;
-border: green solid 1px;
+  margin-top: 50px;
+border: red solid 1px;
 }
 
 .cta {
   max-width: 600px;
-border: green solid 1px;
+  margin: 50px 0;
+border: red solid 1px;
 }
 
 .button {
   display: block;
   color: #FFF;
-background-color: #035158;    /* Petrolio */
+background-color: #0d6f78;    /* Petrolio #035158 */
 font-weight: bold;
 padding: 20px;
 text-align: center;
 border: 2px solid #5D6063;    /* Dark gray */
 border-radius: 30px;
-width: 200px;
+width: 150px;
 margin: 20px auto;
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+}
+
+.button:hover {
+  background-color: #035158;
 }
 
 footer {
-  background-color: grey;
+  background-color: #F2F2F2;    /* Grigio molto chiaro */
   height: 100px;
   display: flex;
   justify-content: center;
@@ -145,7 +164,7 @@ footer {
     height: 50px;
   }
 
-  .navigation {
+  nav {
     height: 40px;
   }
 
@@ -153,13 +172,12 @@ footer {
     height: 30px;
   }
 
-.page {
+.container {
     padding-top: 30px;
 }
 
   .box-profile-image {
     width: 100%;
-    max-width: 600px;
 }
 
 .profile-image {
@@ -178,7 +196,7 @@ footer {
     border: solid red 1px;
   }
 
-  .navigation {
+  nav {
     height: 40px;
   }
 
@@ -186,7 +204,7 @@ footer {
     height: 30px;
   }
 
-.page {
+.container {
     padding-top: 30px;
 }
 
@@ -199,6 +217,9 @@ footer {
   width: 200px;
 }
 
+.presentation {
+  justify-content: center;
+}
 
 }
 
@@ -211,7 +232,7 @@ footer {
     height: 50px;
   }
 
-  .navigation {
+  nav {
     height: 40px;
 }
 
@@ -219,8 +240,12 @@ footer {
   height: 30px;
 }
 
-.page {
+.container {
     padding-top: 30px;
+}
+
+.headline {
+  padding: 100px 0;
 }
 
 .box-profile-image {
@@ -236,7 +261,7 @@ footer {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
-.navigation {
+nav {
   width: 90%;
 }
 
@@ -244,7 +269,7 @@ footer {
     height: 50px;
   }
 
-.page {
+.container {
   flex-direction: column;
 }
 
@@ -256,7 +281,13 @@ footer {
   width: 500px;
 }
 
+.headline {
+  padding: 100px 0;
+}
+
 .presentation {
+  width: 100%
+  min-width: 600px;
   display: flex;
   flex-wrap: wrap;
 }
