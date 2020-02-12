@@ -36,9 +36,6 @@ nav {
   align-items: center;
 }
 
-br {
-  height: 1000px;
-}
 
 .container{
   padding-top: 80px;
@@ -48,7 +45,7 @@ br {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 80%;
   margin: auto;
   border: solid blue 1px;
 }
@@ -86,6 +83,7 @@ br {
 
 .social {
   border: blue solid 1px;
+  margin: 15px auto;
   display: flex;
   justify-content: space-around;
 }
@@ -96,8 +94,14 @@ br {
   padding: 20px;
 }
 
+.actions {
+  margin: 20px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
 .social-logo {
-  height: 30px;
+  height: 35px;
 }
 
 .logos {
@@ -111,7 +115,7 @@ br {
 }
 
 .bio {
-  max-width: 600px;
+  max-width: 800px;
   margin-top: 50px;
 border: red solid 1px;
 }
@@ -138,7 +142,7 @@ text-align: center;
 border: 2px solid #5D6063;    /* Dark gray */
 border-radius: 30px;
 width: 150px;
-margin: 20px auto;
+margin: 15px auto;
 text-decoration: none;
 font-family: 'Roboto', sans-serif;
 }
@@ -156,12 +160,13 @@ footer {
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
 
   header {
     position: fixed;
     bottom: 0;
     height: 50px;
+    border: solid blue 1px;
   }
 
   nav {
@@ -187,7 +192,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+@media only screen and (min-width: 480px) and (max-width: 960px) {
 
   header {
     position: fixed;
@@ -210,7 +215,7 @@ footer {
 
   .box-profile-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .profile-image {
@@ -218,18 +223,19 @@ footer {
 }
 
 .presentation {
+  width: 100%;
+  max-width: 400px;
   justify-content: center;
 }
 
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 800px) and (max-width: 960px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
 
   header {
-    position: fixed;
-    bottom: 0;
     height: 50px;
+    border: solid green 1px;
   }
 
   nav {
@@ -241,7 +247,7 @@ footer {
 }
 
 .container {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .headline {
@@ -259,10 +265,19 @@ footer {
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1200px) {
+
+header {
+  border: solid orange 1px;
+}
 
 nav {
   width: 90%;
+}
+
+
+.page {
+    min-width: 800px;
 }
 
 .my-logo {
@@ -287,7 +302,6 @@ nav {
 
 .presentation {
   width: 100%
-  min-width: 600px;
   display: flex;
   flex-wrap: wrap;
 }
