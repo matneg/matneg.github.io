@@ -4,13 +4,18 @@
   box-sizing: border-box;
 }
 
-img {
-  border: 1px solid blue;
-}
-
 @font-face {
   font-family: 'Roboto';
   src: url(Roboto-Bold-webfont.woff) format('woff');
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Fira';
+  src: url(firamono-regular-webfont.woff) format('woff');
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, li {
@@ -53,15 +58,16 @@ li > a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
   max-width: 1200px;
   margin: auto;
   border: solid blue 1px;
 }
 
 .presentation {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
   border: purple solid 1px;
 }
@@ -74,7 +80,8 @@ li > a {
 .box-profile-image {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(white, #D1D1D1);
+  background-image: linear-gradient(white, #D2D2D2);    /* color senape #eab92e */
+  width: 100%;
 }
 
 .profile-image {
@@ -82,9 +89,6 @@ li > a {
   min-width: 200px;
 }
 
-.text-intro {
-
-}
 
 .actions {
   border: pink solid 1px;
@@ -95,6 +99,16 @@ li > a {
   margin: 15px auto;
   display: flex;
   justify-content: space-around;
+}
+
+.social-logo:hover, .button:hover {
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  transition: filter, opacity 0.5s;
+  -o-transition: filter, opacity 0.5s;
+  -moz-transition: filter, opacity 0.5s;
+  -webkit-transition: filter, opacity 0.5s;
 }
 
 .headline {
@@ -114,14 +128,22 @@ li > a {
 }
 
 .logos {
+  max-width: 200px;
+  margin: auto;
   border: 1px solid pink;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logos > div {
+  border: 1px red solid;
+  margin: auto;
 }
 
 .software {
-  height: 80px;
-  padding: 10px;
+  height: 60px;
+  margin: 10px;
 }
 
 .bio {
@@ -150,16 +172,13 @@ font-weight: bold;
 padding: 20px;
 text-align: center;
 border: 2px solid #5D6063;    /* Dark gray */
-border-radius: 30px;
+border-radius: 5px;
 width: 150px;
 margin: 15px auto;
 text-decoration: none;
 font-family: 'Roboto', sans-serif;
 }
 
-.button:hover {
-  background-color: #035158;
-}
 
 footer {
   background-color: #F2F2F2;    /* Grigio molto chiaro */
@@ -236,6 +255,10 @@ footer {
     padding-top: 30px;
 }
 
+.page {
+  width: 95%;
+}
+
   .box-profile-image {
     width: 100%;
 }
@@ -244,17 +267,14 @@ footer {
   width: 200px;
 }
 
-.logos {
-  flex-wrap: wrap;
-}
 
-.software {
-  height: 50px;
+footer {
+  margin-bottom: 50px;
 }
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 960px) {
+@media only screen and (min-width: 481px) and (max-width: 960px) {
 
   header {
     position: fixed;
@@ -314,30 +334,33 @@ footer {
   padding-top: 30px;
 }
 
+.page {
+  width: 90%;
+}
+
 .box-profile-image {
   width: 100%;
-  max-width: 800px;
 }
 
 .profile-image {
   width: 200px;
 }
 
-.presentation {
-  width: 100%;
-  max-width: 400px;
-  justify-content: center;
-}
 
 .logos {
-  flex-wrap: wrap;
+  max-width: 340px;
+  justify-content: center;
+  margin: auto;
 }
 
+footer {
+  margin-bottom: 50px;
+}
 
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 960px) and (max-width: 1200px) {
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
 
   header {
     border: solid green 1px;
@@ -386,29 +409,40 @@ footer {
     padding-top: 80px;
 }
 
+.page {
+  width: 85%;
+}
+
 .headline {
   padding: 100px 0;
 }
 
 .box-profile-image {
-    max-width: 400px;
+    width: 400px;
 }
 
 .profile-image {
   width: 500px;
 }
 
+.logos {
+  max-width: 455px;
+  justify-content: center;
+  margin: auto;
+}
+
+.software {
+  height: 90px;
+  margin: 10px;
+}
+
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
 
 header {
   border: solid orange 1px;
-}
-
-nav {
-  width: 90%;
 }
 
 .menu-logo {
@@ -437,6 +471,7 @@ nav {
 }
 
 .page {
+    width: 80%;
     min-width: 800px;
 }
 
@@ -453,17 +488,31 @@ nav {
 }
 
 .profile-image {
+  width: 100%;
   width: 500px;
 }
 
+
 .headline {
-  padding: 100px 0;
+  margin: 20px;
+  padding: 120px 20px;
 }
 
-.presentation {
-  width: 100%
-  display: flex;
-  flex-wrap: wrap;
+.actions {
+  margin: 20px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.logos {
+  max-width: 455px;
+  justify-content: center;
+  margin: auto;
+}
+
+.software {
+  height: 90px;
+  margin: 10px;
 }
 
 }
