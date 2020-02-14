@@ -6,9 +6,9 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url(Roboto-Bold-webfont.woff) format('woff');
-  font-style: bold;
-  font-weight: 700;
+  src: url(Roboto-Black-webfont.woff) format('woff');
+  font-style: black;
+  font-weight: 900;
 }
 
 @font-face {
@@ -40,6 +40,7 @@ h5 {
 
 p {
   font-family: 'Fira Mono', monospace;
+  font-size: 14px;
 }
 
 header {
@@ -65,6 +66,11 @@ li > a {
   color: black;
 }
 
+li > a:hover {
+  color: white;
+  background-color: #0d6f78;
+}
+
 .container{
   padding-top: 80px;
 }
@@ -75,6 +81,7 @@ li > a {
   align-items: center;
   max-width: 1200px;
   margin: auto;
+  border: 1px blue solid;
 }
 
 .presentation {
@@ -98,7 +105,6 @@ li > a {
 
 .profile-image {
   width: 100%;
-  min-width: 200px;
 }
 
 
@@ -108,19 +114,9 @@ li > a {
 }
 
 .social {
-  margin: 15px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
-}
-
-.social-logo:hover, .button:hover {
-  filter: alpha(opacity=60);
-  -moz-opacity: 0.7;
-  opacity: 0.7;
-  transition: filter, opacity 0.5s;
-  -o-transition: filter, opacity 0.5s;
-  -moz-transition: filter, opacity 0.5s;
-  -webkit-transition: filter, opacity 0.5s;
 }
 
 .text-intro {
@@ -168,7 +164,6 @@ li > a {
 
 .bio {
   max-width: 800px;
-  margin-top: 80px;
 }
 
 .skills {
@@ -179,6 +174,10 @@ li > a {
 .cta {
   max-width: 800px;
   margin: 80px 0;
+}
+
+.cta > a {
+  margin-top: 30px;
 }
 
 .button {
@@ -196,6 +195,15 @@ text-decoration: none;
 font-family: 'Roboto', sans-serif;
 }
 
+.social-logo:hover, .button:hover, .my-logo:hover {
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  transition: filter, opacity 0.5s;
+  -o-transition: filter, opacity 0.5s;
+  -moz-transition: filter, opacity 0.5s;
+  -webkit-transition: filter, opacity 0.5s;
+}
 
 footer {
   background-color: #F2F2F2;    /* Grigio molto chiaro */
@@ -206,13 +214,14 @@ footer {
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
 
 
   header {
     position: fixed;
     bottom: 0;
     height: 50px;
+    border: 1px solid red;
   }
 
   nav {
@@ -291,12 +300,13 @@ footer {
 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 960px) {
+@media only screen and (min-width: 581px) and (max-width: 960px) {
 
   header {
     position: fixed;
     bottom: 0;
     height: 50px;
+    border: 1px solid green;
   }
 
   nav {
@@ -373,9 +383,14 @@ footer {
   margin-bottom: 50px;
 }
 
+.actions {
+
+}
+
 .text-intro {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 
@@ -384,6 +399,10 @@ footer {
 
 /* Tablet Styles */
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
+
+header {
+  border: solid 1px blue;
+}
 
   h1 {
     font-size: 35px;
@@ -399,6 +418,10 @@ footer {
 
   h5 {
     font-size: 10px;
+  }
+
+  p {
+    font-size: 16px;
   }
 
   header {
@@ -448,7 +471,7 @@ footer {
 }
 
 .page {
-  width: 85%;
+  width: 100%;
 }
 
 .headline {
@@ -469,6 +492,10 @@ footer {
   margin: auto;
 }
 
+.bio {
+  margin-top: 80px;
+}
+
 .software {
   height: 90px;
   margin: 10px;
@@ -478,6 +505,10 @@ footer {
 
 /* Desktop Styles */
 @media only screen and (min-width: 1201px) {
+
+  header {
+    border: solid 1px grey;
+  }
 
   h1 {
     font-size: 35px;
@@ -494,6 +525,10 @@ footer {
   h5 {
     font-size: 11px;
   }
+
+p {
+  font-size: 16px;
+}
 
 header {
 }
@@ -539,13 +574,12 @@ header {
 }
 
 .profile-image {
-  width: 100%;
-  width: 500px;
+  width: 600px;
 }
 
 
 .headline {
-  margin: 20px;
+  margin: 0px;
   padding: 120px 20px;
 }
 
@@ -553,6 +587,10 @@ header {
   margin: 20px;
   margin-top: 50px;
   padding: 20px;
+}
+
+.bio {
+  margin-top: 80px;
 }
 
 .logos {
