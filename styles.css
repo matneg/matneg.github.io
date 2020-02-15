@@ -32,6 +32,13 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Hind';
+  src: url(hind-semibold-webfont.woff) format('woff');
+  font-style: semibold;
+  font-weight: 600;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
@@ -72,6 +79,12 @@ p {
   line-height: 150%;
 }
 
+strong {
+  font-family: 'Hind', monospace;
+  font-weight: 600;
+  color: #0d6f78;
+}
+
 header {
   height: 80px;
   width: 100%;
@@ -99,10 +112,10 @@ li > a {
 li > a:hover {
   color: white;
   background-color: #0d6f78;
-  transition: background-color 1s;
-  -o-transition: background-color 1s;
-  -moz-transition: background-color 1s;
-  -webkit-transition: background-color 1s;
+  transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
 }
 
 li > a:active {
@@ -126,7 +139,7 @@ li > a:active {
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  border: 1px solid red;
+  width: 100%;
 }
 
 
@@ -134,7 +147,7 @@ figure {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(white, #D2D2D2);    /* color senape #eab92e o #D2D2D2*/
-  width: 100%;
+  max-width: 600px;
 }
 
 
@@ -151,7 +164,6 @@ figure {
 }
 
 .text-intro {
-  border: 1px solid red;
   margin: auto;
 }
 
@@ -190,17 +202,16 @@ figure {
 }
 
 .bio {
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .skills {
-  max-width: 800px;
+  max-width: 600px;
   margin-top: 80px;
 }
 
 .cta {
-  border: 1px solid red;
-  width: 100%;
+  max-width: 600px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -258,7 +269,6 @@ footer {
     position: fixed;
     bottom: 0;
     height: 50px;
-    border: 1px solid red;
   }
 
   nav {
@@ -343,7 +353,6 @@ footer {
     position: fixed;
     bottom: 0;
     height: 50px;
-    border: 1px solid green;
   }
 
   nav {
@@ -410,16 +419,16 @@ figure {
 }
 
 .headline {
-  border: 1px red solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 40px auto;
+  padding-right: 50px;
 }
 
 .actions {
   justify-content: center;
-  margin: 40 px auto;
+  margin: 40px auto;
 }
 
 .logos {
@@ -433,22 +442,14 @@ footer {
 }
 
 .text-intro {
-  border: 1px green solid;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-
-
 }
 
-/* Tablet Styles */
 @media only screen and (min-width: 951px) and (max-width: 1200px) {
-
-header {
-  border: solid 1px blue;
-}
 
   h1 {
     font-size: 35px;
@@ -468,9 +469,6 @@ header {
 
   p {
     font-size: 17px;
-  }
-
-  header {
   }
 
 .my-logo {
@@ -520,12 +518,16 @@ header {
   width: 100%;
 }
 
+.presentation {
+  max-width: 800px;
+}
+
 .headline {
   padding: 100px 0;
 }
 
 figure {
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .profile-image {
@@ -540,6 +542,15 @@ figure {
 
 .bio {
   margin-top: 80px;
+  max-width: 800px;
+}
+
+.skills{
+  max-width: 800px;
+}
+
+.cta {
+  max-width: 800px;
 }
 
 .software {
@@ -551,10 +562,6 @@ figure {
 
 /* Desktop Styles */
 @media only screen and (min-width: 1201px) {
-
-  header {
-    border: solid 1px grey;
-  }
 
   h1 {
     font-size: 35px;
@@ -574,9 +581,6 @@ figure {
 
 p {
   font-size: 17px;
-}
-
-header {
 }
 
 .menu-logo {
@@ -611,8 +615,12 @@ header {
   flex-direction: column;
 }
 
+.presentation {
+  max-width: 900px;
+}
+
 figure {
-    max-width: 400px;
+    max-width: 380px;
 }
 
 .profile-image {
@@ -631,6 +639,15 @@ figure {
 
 .bio {
   margin-top: 80px;
+  max-width: 900px;
+}
+
+.skills{
+  max-width: 900px;
+}
+
+.cta {
+  max-width: 900px;
 }
 
 .logos {
