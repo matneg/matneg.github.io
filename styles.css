@@ -142,15 +142,12 @@ li > a:active {
   width: 100%;
 }
 
-
 figure {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(white, #D2D2D2);    /* color senape #eab92e o #D2D2D2*/
   max-width: 600px;
 }
-
-
 
 .actions {
   display: flex;
@@ -294,6 +291,7 @@ footer {
       background: #FFFFFF;;
       padding-bottom: : 100px;
       border: 1px solid black;
+      border-radius: 3px;
 
       position: absolute;
       top: -150px;
@@ -373,6 +371,7 @@ footer {
     background: #FFFFFF;;
     padding-bottom: : 100px;
     border: 1px solid black;
+    border-radius: 3px;
 
     position: absolute;
     top: -150px;
@@ -421,8 +420,8 @@ figure {
 .headline {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 40px auto;
+  justify-content: flex-start;
+  margin: 50px auto;
   padding-right: 50px;
 }
 
@@ -481,6 +480,7 @@ footer {
     background: #FFFFFF;;
     padding-top: 60px;
     border: 1px solid black;
+    border-radius: 3px;
 
     position: absolute;
     top: -25px;
@@ -560,7 +560,6 @@ figure {
 
 }
 
-/* Desktop Styles */
 @media only screen and (min-width: 1201px) {
 
   h1 {
