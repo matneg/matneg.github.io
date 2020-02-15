@@ -85,6 +85,10 @@ strong {
   color: #0d6f78;
 }
 
+h1 > span {
+  color: #0d6f78;
+}
+
 header {
   height: 80px;
   width: 100%;
