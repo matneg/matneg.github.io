@@ -434,7 +434,8 @@ figure {
 }
 
 .actions {
-  justify-content: center;
+  display: flex;
+
   margin: 40px auto;
 }
 
@@ -450,8 +451,6 @@ footer {
 
 .text-intro {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
 }
