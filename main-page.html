@@ -2,59 +2,118 @@
 <html lang="it">
   <head>
     <meta charset="utf-8">
-    <title>MN - Matteo Negri</title>
+    <title>_Matteo Negri_</title>
     <link rel='stylesheet' href='styles.css'/>
-    <link rel='icon' href='images/favicon.png'/>
+    <link rel='icon' href='images/favicon.ico'/>
     <meta name='viewport'
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
   </head>
   <body>
 
 <header>
-  <a href="#"><img src="images/logo-mn-nero.svg" alt="logo-mn-nero"></a>
-  <div class="menu"><img src="images/menu.svg" alt="menu-icon"></div>
+  <nav>
+    <a href="#">
+      <img class="my-logo" src="images/logo-mn-nero.svg" alt="logo-mn-nero" style="max-height:50px">
+    </a>
+    <div class="dropdown">
+      <img class="menu-logo dropdown"src="images/menu.svg" alt="menu-icon" style="max-height:30px">
+    <ul class="nav-menu">
+      <li><a href="#bio">Chi&nbspsono</a></li>
+      <li><a href="#skills">Competenze</a></li>
+      <li><a href="https://ita.calameo.com/read/006078813d6d0c3bd656e" target="_blank">Portfolio</a></li>
+    </ul>
+    </div>
+  </nav>
 </header>
 
+<div class="container">
+
+  <div class="page">
+
 <section class="presentation">
-  <div class="profile-image"><img src="images/profile-photo.png" alt="profile-image-mn"></div>
-  <h1>Ciao, sono Matteo</h1>
-  <h2>Disegno, scrivo e progetto.</h2>
+  <figure><img class="profile-image" src="images/profile-photo.png" alt="profile-image-mn" style="max-width:600px"/></figure>
+
+<div class="text-intro">
+
+  <div class="headline">
+    <h1>Ciao, sono Matteo</h1>
+    <h2>progetto, scrivo e disegno.</h2>
+  </div>
+
+  <div class="actions">
+    <a class="button" href="mailto:mat.neg92@gmail.com"><img src="images/mail.svg" alt="mail-icon" height='12'/>&nbspScrivimi</a>
+    <div class="social">
+      <a href="https://www.facebook.com/matteo.negri3" target="_blank"><img class="social-logo" src="images/facebook.svg" alt="facebook-link"/></a>
+      <a href="https://www.instagram.com/mat__neg/" target="_blank"><img class="social-logo" src="images/instagram.svg" alt="instagram-link"/></a>
+      <a href="https://www.linkedin.com/in/matteo-negri/" target="_blank"><img class="social-logo" src="images/linkedin.svg" alt="linkedin-link"/></a>
+    </div>
+  </div>
+</div>
+
 </section>
+
+<div id="bio"></div>
 
 <section class="bio">
-  <p></p>
-  <div class="social">
-    <span><a href="mailto:mat.neg92@gmail.com"><img src="images/mail.svg" alt="mail-icon"/>Scrivimi!</a></span>
-    <a href="https://www.facebook.com/matteo.negri3"><img src="images/facebook.svg" alt="facebook-link"/></a>
-    <a href="https://www.instagram.com/mat__neg/"><img src="images/instagram.svg" alt="instagram-link"/></a>
-    <a href="https://www.linkedin.com/in/matteo-negri/"><img src="images/linkedin.svg" alt="linkedin-link"/></a>
-  </div>
+  <h3>Chi sono</h3>
+  <p>
+    Sono nato nel 1992 a <strong>Vigevano</strong>, in provincia di Pavia.<br>
+    Mi appassiona la <strong>creatività</strong> in ogni sua forma, così ho sempre cercato di sperimentare in ogni campo.
+    A partire dal liceo classico mi sono cimentato con la <strong>scrittura</strong> e poi all’Università ho scelto <strong>architettura</strong> presso il Politecnico di Milano.
+    Ho vissuto sei mesi a <strong>Siviglia</strong>, grazie al programma Erasmus: quest’esperienza ha cambiato il modo in cui guardo il mondo e gli altri.<br>
+    Tra i miei interessi ci sono anche la <strong>fotografia</strong>, il <strong>disegno</strong>, la <strong>grafica</strong> e l’<strong>innovazione tecnologica</strong>.<br>
+    Dopo la laurea, mi sono appassionato alla <strong>User Experience</strong> e <strong>User Interface design</strong>, campo in cui ho trovato una sintesi dei miei interessi.
+    Il mio obiettivo attuale è di lavorare come <strong>UX designer</strong> per poter contribuire a <strong>migliorare la vita e l'esperienza delle persone</strong>.
+</p>
 </section>
 
-<section>
+<div id="skills"></div>
+
+<section class="skills">
   <h3>Le mie competenze</h3>
-  <p></p>
+  <p>La formazione universitaria e l'esperienza presso studi di architettura mi hanno permesso di sviluppare la capacità di <strong>progettare</strong>,
+    insieme alla <strong>creatività</strong>, l'<strong>attitudine al lavoro di squadra</strong> e alla <strong>precisione</strong>.
+  </p>
+  <br/>
   <h3>I miei strumenti</h3>
   <div class="logos">
-    <img src="" alt="photoshop-logo">
-    <img src="" alt="illustrator-logo">
-    <img src="" alt="indesign-logo">
+    <div>
+    <img class="software" src="images/autocad.png" alt="autocad-logo">
+    <img class="software" src="images/photoshop.png" alt="photoshop-logo">
   </div>
+    <div>
+    <img class="software" src="images/illustrator.png" alt="illustrator-logo">
+    <img class="software" src="images/indesign.png" alt="indesign-logo">
+  </div>
+  </div>
+  <br/>
   <h3>Cosa sto imparando</h3>
   <div class="logos">
-    <img src="images/adobe-xd.png" alt="adobexd-logo">
-    <img src="images/figma.png" alt="figma-logo">
-    <img src="images/html5.png" alt="html5-logo">
-    <img src="images/css3.png" alt="css3-logo">
+    <div>
+    <img class="software" src="images/adobe-xd.png" alt="adobexd-logo">
+    <img class="software" src="images/figma.png" alt="figma-logo">
   </div>
-  <p></p>
+    <div>
+    <img class="software" src="images/html5.png" alt="html5-logo">
+    <img class="software" src="images/css3.png" alt="css3-logo">
+  </div>
+  </div>
 </section>
 
-<section>
-  <p>Vuoi scoprire di più su di me?</p>
-  <p>Dai un'occhiata ai miei lavori!</p>
-  <a href="https://ita.calameo.com/read/006078813d6d0c3bd656e">Portfolio</a>
+
+<section class="cta">
+  <h3>Vuoi scoprire di più su di me?</h3>
+  <h3>Dai un'occhiata al mio lavoro!</h3>
+  <a class="button" href="https://ita.calameo.com/read/006078813d6d0c3bd656e" target="_blank">Portfolio</a>
 </section>
+
+  </div>
+
+</div>
+
+<footer>
+<h5>Fatto da Matteo Negri, 2020.</h5>
+</footer>
 
   </body>
 </html>
