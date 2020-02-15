@@ -208,7 +208,6 @@ figure {
 
 .skills {
   max-width: 600px;
-  margin-top: 80px;
 }
 
 .cta {
@@ -557,6 +556,7 @@ figure {
 }
 
 .skills{
+  margin-top: 80px;
   max-width: 800px;
 }
 
@@ -653,6 +653,7 @@ figure {
 }
 
 .skills{
+  margin-top: 80px;
   max-width: 900px;
 }
 
