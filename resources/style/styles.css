@@ -6,13 +6,6 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(../../resources/fonts/montserrat-black-webfont.woff) format('woff');
-  font-style: black;
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: 'Montserrat';
   src: url(../../resources/fonts/montserrat-extrabold-webfont.woff) format('woff');
   font-style: extrabold;
   font-weight: 800;
@@ -23,6 +16,13 @@
   src: url(../../resources/fonts/montserrat-bold-webfont.woff) format('woff');
   font-style: bold;
   font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../resources/fonts/montserrat-semibold-webfont.woff) format('woff');
+  font-style: semibold;
+  font-weight: 600;
 }
 
 @font-face {
@@ -98,7 +98,7 @@ a > strong:hover {
 }
 
 strong {
-  font-family: 'Hind', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #0d6f78;
 }
