@@ -6,35 +6,35 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(montserrat-black-webfont.woff) format('woff');
+  src: url(../../resources/fonts/montserrat-black-webfont.woff) format('woff');
   font-style: black;
   font-weight: 900;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(montserrat-extrabold-webfont.woff) format('woff');
+  src: url(../../resources/fonts/montserrat-extrabold-webfont.woff) format('woff');
   font-style: extrabold;
   font-weight: 800;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(montserrat-bold-webfont.woff) format('woff');
+  src: url(../../resources/fonts/montserrat-bold-webfont.woff) format('woff');
   font-style: bold;
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Hind';
-  src: url(hind-regular-webfont.woff) format('woff');
+  src: url(../../resources/fonts/hind-regular-webfont.woff) format('woff');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Hind';
-  src: url(hind-semibold-webfont.woff) format('woff');
+  src: url(../../resources/fonts/hind-semibold-webfont.woff) format('woff');
   font-style: semibold;
   font-weight: 600;
 }
@@ -77,6 +77,24 @@ p {
   font-size: 15px;
   letter-spacing: 0.5px;
   line-height: 150%;
+}
+
+p > a {
+  background-color: #0d6f78;
+  text-decoration: none;
+}
+
+a > strong {
+  color: white;
+}
+
+a > strong:hover {
+  color: #0d6f78;
+  background-color: white;
+  transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
 }
 
 strong {
