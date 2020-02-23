@@ -242,17 +242,17 @@ figure {
 .button {
   display: block;
   color: #FFF;
-background-color: #0d6f78;    /* Petrolio #035158 */
-font-weight: bold;
-padding: 20px;
-text-align: center;
-border: 2px solid #0d6f78;    /* Dark gray */
-border-radius: 3px;
-width: 150px;
-margin: 15px auto;
-text-decoration: none;
-font-family: 'Montserrat', sans-serif;
-font-weight: 700;
+  background-color: #0d6f78;    /* Petrolio #035158 */
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #0d6f78;    /* Dark gray */
+  border-radius: 3px;
+  width: 150px;
+  margin: 15px auto;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .social-logo:hover, .button:hover, .my-logo:hover {
@@ -281,68 +281,62 @@ footer {
 @media only screen and (max-width: 580px) {
 
 
-  header {
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-  }
+header {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+}
 
-  nav {
-    height: 40px;
-  }
+nav {
+  height: 40px;
+}
 
-  .nav-menu {
-    display: none;
-  }
+.my-logo {
+  height: 30px;
+}
 
+.menu-logo {
+  height: 30px
+}
 
-  .my-logo {
-    height: 30px;
-  }
+.dropdown:hover .nav-menu {
+  display: flex;
+  flex-direction: column-reverse;
+  background: #FFFFFF;;
+  padding-bottom: : 100px;
+  border: 1px solid black;
+  border-radius: 3px;
 
-  .menu-logo {
-    height: 30px
-  }
+  position: absolute;
+  top: -150px;
+  left: -130px;
+  z-index: 1;
+}
 
-  .dropdown:hover .nav-menu {
-      display: flex;
-      flex-direction: column-reverse;
-      background: #FFFFFF;;
-      padding-bottom: : 100px;
-      border: 1px solid black;
-      border-radius: 3px;
+.nav-menu {
+  display: none;
+}
 
-      position: absolute;
-      top: -150px;
-      left: -130px;
-      z-index: 1;
-    }
+.nav-menu li {
+  list-style: none;
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
 
-  .nav-menu {
-    display: none;
-    }
-
-  .nav-menu li {
-    list-style: none;
-    padding: 0 40px 10px 20px;
-      margin: 10px;
-    }
-
-  .nav-menu li:first-of-type {
+.nav-menu li:first-of-type {
     padding-bottom: 50px;
-    }
+}
 
-  .dropdown {
-    position: relative;
-    }
+.dropdown {
+  position: relative;
+}
 
-  .dropdown > img {
-    z-index: 2;
-    }
-
+.dropdown > img {
+  z-index: 2;
+}
 
 .container {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .page {
@@ -357,7 +351,6 @@ figure {
   width: 200px;
 }
 
-
 footer {
   margin-bottom: 50px;
 }
@@ -366,67 +359,67 @@ footer {
 
 @media only screen and (min-width: 581px) and (max-width: 950px) {
 
-  h1 {
-    font-size: 30px;
-  }
+h1 {
+  font-size: 30px;
+}
 
-  h2 {
-    font-size: 25px;
-  }
+h2 {
+  font-size: 25px;
+}
 
-  header {
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-  }
+header {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+}
 
-  nav {
-    height: 40px;
-  }
+nav {
+  height: 40px;
+}
 
-  .my-logo {
-    height: 30px;
-  }
+.my-logo {
+  height: 30px;
+}
 
-  .menu-logo {
-    height: 30px
-  }
+.menu-logo {
+  height: 30px
+}
 
 .dropdown:hover .nav-menu {
-    display: flex;
-    flex-direction: column-reverse;
-    background: #FFFFFF;;
-    padding-bottom: : 100px;
-    border: 1px solid black;
-    border-radius: 3px;
+  display: flex;
+  flex-direction: column-reverse;
+  background: #FFFFFF;;
+  padding-bottom: : 100px;
+  border: 1px solid black;
+  border-radius: 3px;
 
-    position: absolute;
-    top: -150px;
-    left: -130px;
-    z-index: 1;
-  }
+  position: absolute;
+  top: -150px;
+  left: -130px;
+  z-index: 1;
+}
 
 .nav-menu {
   display: none;
-  }
+}
 
 .nav-menu li {
   list-style: none;
   padding: 0 40px 10px 20px;
     margin: 10px;
-  }
+}
 
 .nav-menu li:first-of-type {
   padding-bottom: 50px;
-  }
+}
 
 .dropdown {
   position: relative;
-  }
+}
 
 .dropdown > img {
   z-index: 2;
-  }
+}
 
 .container {
   padding-top: 30px;
@@ -476,42 +469,42 @@ footer {
 
 @media only screen and (min-width: 951px) and (max-width: 1200px) {
 
-  h1 {
-    font-size: 35px;
-  }
+h1 {
+  font-size: 35px;
+}
 
-  h2 {
-    font-size: 30px;
-  }
+h2 {
+  font-size: 30px;
+}
 
-  h3 {
-    font-size: 25px;
-  }
+h3 {
+  font-size: 25px;
+}
 
-  h5 {
-    font-size: 10px;
-  }
+h5 {
+  font-size: 10px;
+}
 
-  p {
-    font-size: 17px;
-  }
+p {
+  font-size: 17px;
+}
 
 .my-logo {
   height: 50px;
 }
 
 .dropdown:hover .nav-menu {
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF;;
-    padding-top: 60px;
-    border: 1px solid black;
-    border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;;
+  padding-top: 60px;
+  border: 1px solid black;
+  border-radius: 3px;
 
-    position: absolute;
-    top: -25px;
-    left: -30px;
-    z-index: 1;
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  z-index: 1;
 }
 
 .nav-menu {
@@ -519,9 +512,9 @@ footer {
 }
 
 .nav-menu li {
-    list-style: none;
-    padding: 0 40px 10px 20px;
-    margin: 10px;
+  list-style: none;
+  padding: 0 40px 10px 20px;
+  margin: 10px;
 }
 
 .nav-menu li:last-of-type {
@@ -537,7 +530,7 @@ footer {
 }
 
 .container {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 .page {
@@ -589,21 +582,21 @@ figure {
 
 @media only screen and (min-width: 1201px) {
 
-  h1 {
-    font-size: 35px;
-  }
+h1 {
+  font-size: 35px;
+}
 
-  h2 {
-    font-size: 30px;
-  }
+h2 {
+  font-size: 30px;
+}
 
-  h3 {
-    font-size: 25px;
-  }
+h3 {
+  font-size: 25px;
+}
 
-  h5 {
-    font-size: 11px;
-  }
+h5 {
+  font-size: 11px;
+}
 
 p {
   font-size: 17px;
@@ -629,13 +622,13 @@ p {
 }
 
 .page {
-    width: 80%;
-    min-width: 800px;
+  width: 80%;
+  min-width: 800px;
 }
 
 .my-logo {
-    height: 50px;
-  }
+  height: 50px;
+}
 
 .container {
   flex-direction: column;
