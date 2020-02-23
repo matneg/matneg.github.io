@@ -253,6 +253,7 @@ figure {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  box-shadow: 5px 5px 5px #dedede;
 }
 
 .social-logo:hover, .button:hover, .my-logo:hover {
@@ -275,6 +276,26 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0d6f78;
 }
 
 /* Mobile Styles */
