@@ -168,7 +168,7 @@ li > a:active {
 figure {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(white, #D2D2D2);    /* color senape #eab92e o #D2D2D2*/
+  background-image: linear-gradient(white, #D2D2D2);
   max-width: 600px;
 }
 
@@ -242,11 +242,11 @@ figure {
 .button {
   display: block;
   color: #FFF;
-  background-color: #0d6f78;    /* Petrolio #035158 */
+  background-color: #0d6f78;    /* Petrolio */
   font-weight: bold;
   padding: 20px;
   text-align: center;
-  border: 2px solid #0d6f78;    /* Dark gray */
+  border: 2px solid #0d6f78;    /* Grigio scuro */
   border-radius: 3px;
   width: 150px;
   margin: 15px auto;
