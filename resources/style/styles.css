@@ -181,6 +181,7 @@ figure {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-top: 50px;
 }
 
 .text-intro {
@@ -193,10 +194,6 @@ figure {
 
 .actions {
   margin: 40px;
-  margin-top: 50px;
-}
-
-.social {
   margin-top: 50px;
 }
 
@@ -654,10 +651,6 @@ figure {
 
 .profile-image {
   width: 600px;
-}
-
-.headline {
-  padding: 100px 0;
 }
 
 .actions {
