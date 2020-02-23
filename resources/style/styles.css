@@ -135,10 +135,6 @@ li > a {
 li > a:hover {
   color: white;
   background-color: #0d6f78;
-  transition: color 0.5s;
-  -o-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -webkit-transition: color 0.5s;
 }
 
 li > a:active {
