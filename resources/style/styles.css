@@ -290,17 +290,17 @@ footer {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #0d6f78;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #FFFFFF;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0d6f78;
+  background: #888;
 }
 
 /* Mobile Styles */
