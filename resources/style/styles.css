@@ -204,10 +204,10 @@ figure {
 
 .social-logo {
   height: 35px;
-  transition: filter, opacity, transform 0.5s;
-  -o-transition: filter, opacity, transform 0.5s;
-  -moz-transition: filter, opacity, transform 0.5s;
-  -webkit-transition: filter, opacity,transform 0.5s;
+  transition: filter, opacity 0.5s, transform 0.5s;
+  -o-transition: filter, opacity 0.5s, transform 0.5s;
+  -moz-transition: filter, opacity 0.5s, transform 0.5s;
+  -webkit-transition: filter, opacity 0.5s, transform 0.5s;
 }
 
 .logos {
@@ -263,17 +263,17 @@ figure {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   box-shadow: 5px 5px 5px #dedede;
-  transition: filter, opacity, transform 0.5s;
-  -o-transition: filter, opacity, transform 0.5s;
-  -moz-transition: filter, opacity, transform 0.5s;
-  -webkit-transition: filter, opacity, transform 0.5s;
+  transition: filter, opacity 0.5s, transform 0.5s;
+  -o-transition: filter, opacity 0.5s, transform 0.5s;
+  -moz-transition: filter, opacity 0.5s, transform 0.5s;
+  -webkit-transition: filter, opacity 0.5s, transform 0.5s;
 }
 
 .my-logo {
-  transition: filter, opacity, transform 0.5s;
-  -o-transition: filter, opacity, transform 0.5s;
-  -moz-transition: filter, opacity, transform 0.5s;
-  -webkit-transition: filter, opacity, transform 0.5s;
+  transition: filter 0.5s, transform 0.5s;
+  -o-transition: filter 0.5s, transform 0.5s;
+  -moz-transition: filter 0.5s, transform 0.5s;
+  -webkit-transition: filter 0.5s, transform 0.5s;
 }
 
 .social-logo:hover, .button:hover, .my-logo:hover {
