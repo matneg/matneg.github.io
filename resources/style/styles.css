@@ -118,7 +118,7 @@ h1 > span {
 }
 
 header {
-  height: 80px;
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ header {
 }
 
 nav {
-  height: 60px;
+  height: 80px;
   width: 80%;
   max-width: 1200px;
   display: flex;
@@ -150,16 +150,16 @@ li > a:active {
   color: black;
 }
 
-.container{
-  padding-top: 80px;
-}
-
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
   margin: auto;
+}
+
+.container {
+  padding-top: 30px;
 }
 
 .presentation {
@@ -204,6 +204,10 @@ figure {
 
 .social-logo {
   height: 35px;
+  transition: filter, opacity, transform 0.5s;
+  -o-transition: filter, opacity, transform 0.5s;
+  -moz-transition: filter, opacity, transform 0.5s;
+  -webkit-transition: filter, opacity,transform 0.5s;
 }
 
 .logos {
@@ -259,16 +263,24 @@ figure {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   box-shadow: 5px 5px 5px #dedede;
+  transition: filter, opacity, transform 0.5s;
+  -o-transition: filter, opacity, transform 0.5s;
+  -moz-transition: filter, opacity, transform 0.5s;
+  -webkit-transition: filter, opacity, transform 0.5s;
+}
+
+.my-logo {
+  transition: filter, opacity, transform 0.5s;
+  -o-transition: filter, opacity, transform 0.5s;
+  -moz-transition: filter, opacity, transform 0.5s;
+  -webkit-transition: filter, opacity, transform 0.5s;
 }
 
 .social-logo:hover, .button:hover, .my-logo:hover {
+  transform: scale(1.1);
   filter: alpha(opacity=60);
   -moz-opacity: 0.7;
   opacity: 0.7;
-  transition: filter, opacity 0.5s;
-  -o-transition: filter, opacity 0.5s;
-  -moz-transition: filter, opacity 0.5s;
-  -webkit-transition: filter, opacity 0.5s;
 }
 
 .button:active {
@@ -310,11 +322,11 @@ footer {
 header {
   position: fixed;
   bottom: 0;
-  height: 50px;
+  height: 60px;
 }
 
 nav {
-  height: 40px;
+  height: 50px;
 }
 
 .my-logo {
@@ -322,7 +334,7 @@ nav {
 }
 
 .menu-logo {
-  height: 30px
+  height: 30px;
 }
 
 .dropdown:hover .nav-menu {
@@ -361,10 +373,6 @@ nav {
   z-index: 2;
 }
 
-.container {
-  padding-top: 30px;
-}
-
 .page {
   width: 95%;
 }
@@ -400,11 +408,11 @@ h2 {
 header {
   position: fixed;
   bottom: 0;
-  height: 50px;
+  height: 60px;
 }
 
 nav {
-  height: 40px;
+  height: 50px;
 }
 
 .my-logo {
@@ -449,10 +457,6 @@ nav {
 
 .dropdown > img {
   z-index: 2;
-}
-
-.container {
-  padding-top: 30px;
 }
 
 .page {
@@ -537,7 +541,7 @@ p {
 
   position: absolute;
   top: -25px;
-  left: -30px;
+  left: -130px;
   z-index: 1;
 }
 
@@ -564,7 +568,7 @@ p {
 }
 
 .container {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .page {
@@ -666,6 +670,7 @@ p {
 
 .container {
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .presentation {
