@@ -150,16 +150,16 @@ li > a:active {
   color: black;
 }
 
-.container{
-  padding-top: 80px;
-}
-
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
   margin: auto;
+}
+
+.container {
+  padding-top: 30px;
 }
 
 .presentation {
@@ -373,10 +373,6 @@ nav {
   z-index: 2;
 }
 
-.container {
-  padding-top: 30px;
-}
-
 .page {
   width: 95%;
 }
@@ -461,10 +457,6 @@ nav {
 
 .dropdown > img {
   z-index: 2;
-}
-
-.container {
-  padding-top: 30px;
 }
 
 .page {
@@ -576,7 +568,7 @@ p {
 }
 
 .container {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .page {
@@ -678,6 +670,7 @@ p {
 
 .container {
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .presentation {
